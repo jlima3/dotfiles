@@ -1,0 +1,18 @@
+$include /etc/inputrc
+# readline performs filename matching and completion in a case-insensitive fashion
+set completion-ignore-case on
+# Readline never asks whether the list of possibilities should be displayed
+set completion-query-items -1
+# words which have more than one possible completion cause the matches to be listed immediately instead of ringing the bell
+set show-all-if-ambiguous on
+# words which have more than one possible completion without any possible partial completion cause the matches to be listed immediately instead of ringing the bell
+set show-all-if-unmodified on
+#  readline does not insert characters from the completion that match characters after point in the word being completed, so portions of the word following the cursor are not duplicated
+set skip-completed-text on
+# keybinding, hit tab to open menu-complete
+tab:menu-complete
+# ctrl-f for historical menu type
+"\C-f": menu-complete-backward
+# up/down arrows to traverse history
+"\e[A":history-search-backward
+"\e[B":history-search-forward
