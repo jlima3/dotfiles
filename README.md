@@ -1,3 +1,3 @@
 # Dotfiles
 
-- My collection of dotfiles for vim, emacs, and bash shell.
+- My collection of dotfiles for vim emacs and bash.
